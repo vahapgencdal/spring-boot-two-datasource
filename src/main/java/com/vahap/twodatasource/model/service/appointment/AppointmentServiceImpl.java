@@ -1,4 +1,4 @@
-package com.vahap.twodatasource.model.service;
+package com.vahap.twodatasource.model.service.appointment;
 
 import com.vahap.twodatasource.model.entity.opus.Appointment;
 import com.vahap.twodatasource.model.repository.AppointmentRepository;
@@ -10,7 +10,6 @@ import org.springframework.stereotype.Service;
  * @author Vahap Gencdal
  * @email avahap19@gmail.com
  * @date 29.09.2018
- * @description TODO: Class Description
  */
 @Service
 @AllArgsConstructor

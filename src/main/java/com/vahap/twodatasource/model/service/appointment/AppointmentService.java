@@ -1,6 +1,7 @@
-package com.vahap.twodatasource.model.service;
+package com.vahap.twodatasource.model.service.appointment;
 
 import com.vahap.twodatasource.model.entity.opus.Appointment;
+import com.vahap.twodatasource.model.service.BaseService;
 
 /**
  * @author Vahap Gencdal

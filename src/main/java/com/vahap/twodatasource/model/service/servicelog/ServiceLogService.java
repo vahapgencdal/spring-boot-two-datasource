@@ -1,6 +1,7 @@
-package com.vahap.twodatasource.model.service;
+package com.vahap.twodatasource.model.service.servicelog;
 
 import com.vahap.twodatasource.model.entity.radar.ServiceLog;
+import com.vahap.twodatasource.model.service.BaseService;
 
 import java.util.List;
 

@@ -5,7 +5,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
-import org.springframework.context.annotation.PropertySources;
 import org.springframework.core.env.Environment;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
@@ -20,10 +19,9 @@ import java.util.HashMap;
  * @author Vahap Gencdal
  * @email avahap19@gmail.com
  * @date 12.10.2018
- * @description TODO: Class Description
  */
 @Configuration
-@PropertySources({@PropertySource("classpath:datasource-opus.properties")})
+@PropertySource("classpath:datasource-opus.properties")
 public class OpusDataSourceConfig {
 
     @Autowired

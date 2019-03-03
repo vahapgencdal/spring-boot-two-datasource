@@ -15,13 +15,18 @@ import java.time.LocalDateTime;
  * @author Vahap Gencdal
  * @email avahap19@gmail.com
  * @date 3.10.2018
- * @description TODO: Class Description
  */
 @Data
 @MappedSuperclass
 @AllArgsConstructor
 @NoArgsConstructor
-@GenericGenerator(name = "TABLE_SEQUENCE", strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator", parameters = {@org.hibernate.annotations.Parameter(name = "optimizer", value = "none"), @org.hibernate.annotations.Parameter(name = "initial_value", value = "1"), @org.hibernate.annotations.Parameter(name = "increment_size", value = "50"), @org.hibernate.annotations.Parameter(name = SequenceStyleGenerator.SEQUENCE_PARAM, value = "SEQ_BASE_ENT")})
+@GenericGenerator(name = "TABLE_SEQUENCE",
+        strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+        parameters = {@org.hibernate.annotations.Parameter(name = "optimizer", value = "none"),
+                @org.hibernate.annotations.Parameter(name = "initial_value", value = "1"),
+                @org.hibernate.annotations.Parameter(name = "increment_size", value = "50"),
+                @org.hibernate.annotations.Parameter(name = SequenceStyleGenerator.SEQUENCE_PARAM, value = "SEQ_BASE_ENT")
+        })
 public abstract class BaseEntity implements Serializable {
 
     @Id

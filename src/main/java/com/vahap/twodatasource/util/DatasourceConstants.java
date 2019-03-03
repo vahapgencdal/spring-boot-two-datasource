@@ -4,9 +4,11 @@ package com.vahap.twodatasource.util;
  * @author Vahap Gencdal
  * @email avahap19@gmail.com
  * @date 12.10.2018
- * @description TODO: Class Description
  */
 public class DatasourceConstants {
+
+    private DatasourceConstants() {
+    }
 
     public static final String PACKAGE_OPUS = "com.vahap.twodatasource.model.entity.opus";
     public static final String PACKAGE_RADAR = "com.vahap.twodatasource.model.entity.radar";

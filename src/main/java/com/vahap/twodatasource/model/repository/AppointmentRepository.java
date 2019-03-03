@@ -14,10 +14,10 @@ import java.util.List;
  * @author Vahap Gencdal
  * @email avahap19@gmail.com
  * @date 29.09.2018
- * @description TODO: Class Description
  */
 @Repository
 public class AppointmentRepository {
+
     @Autowired
     @PersistenceContext(unitName = DatasourceConstants.JPA_UNIT_NAME_OPUS)
     private EntityManager entityManager;

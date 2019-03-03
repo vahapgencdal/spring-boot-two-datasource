@@ -26,7 +26,13 @@ import java.time.LocalTime;
 @Entity
 @Table(name = "SERVICE_LOGS")
 @EqualsAndHashCode(callSuper = true)
-@GenericGenerator(name = "TABLE_SEQUENCE", strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator", parameters = {@org.hibernate.annotations.Parameter(name = "optimizer", value = "none"), @org.hibernate.annotations.Parameter(name = "initial_value", value = "1"), @org.hibernate.annotations.Parameter(name = "increment_size", value = "50"), @org.hibernate.annotations.Parameter(name = SequenceStyleGenerator.SEQUENCE_PARAM, value = "SEQ_SERVICE_LOGS")})
+@GenericGenerator(name = "TABLE_SEQUENCE",
+        strategy = "org.hibernate.id.enhanced.SequenceStyleGenerator",
+        parameters = {@org.hibernate.annotations.Parameter(name = "optimizer", value = "none"),
+                @org.hibernate.annotations.Parameter(name = "initial_value", value = "1"),
+                @org.hibernate.annotations.Parameter(name = "increment_size", value = "50"),
+                @org.hibernate.annotations.Parameter(name = SequenceStyleGenerator.SEQUENCE_PARAM, value = "SEQ_SERVICE_LOGS")
+        })
 public class ServiceLog extends BaseEntity {
 
     @Column(name = "USER_ID")
